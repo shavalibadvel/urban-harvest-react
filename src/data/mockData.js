@@ -1,4 +1,4 @@
-
+// this is temporary data for stats and orders
 export const mockStats = [
   { id: 1, title: "Total Orders", value: "120", icon: "📦", color: "#4CAF50" },
   { id: 2, title: "Revenue", value: "₹10000", icon: "💰", color: "#FF9800" },

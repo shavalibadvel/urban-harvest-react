@@ -1,0 +1,140 @@
+
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dashboard-welcome h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+.dashboard-welcome p {
+  color: var(--gray-500);
+  font-size: 15px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.recent-orders {
+  background-color: var(--white);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.view-all-btn {
+  padding: 8px 16px;
+  background-color: var(--gray-100);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+  transition: all 0.2s;
+}
+
+.view-all-btn:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.orders-table th {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.orders-table td {
+  padding: 16px;
+  font-size: 14px;
+  color: var(--gray-700);
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.orders-table tbody tr:hover {
+  background-color: var(--gray-100);
+}
+
+.order-id {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.amount {
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-green {
+  background-color: rgba(76, 175, 80, 0.15);
+  color: var(--success);
+}
+
+.badge-orange {
+  background-color: rgba(255, 152, 0, 0.15);
+  color: var(--warning);
+}
+
+.badge-blue {
+  background-color: rgba(33, 150, 243, 0.15);
+  color: var(--info);
+}
+
+/* RESPONSIVE - shrink to 2 columns then 1 */
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-welcome h1 {
+    font-size: 22px;
+  }
+}

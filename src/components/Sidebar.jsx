@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import "../styles/Sidebar.css";
 
 function Sidebar({ isOpen, closeSidebar }) {
-  // Menu items - we map over this so adding new items is easy
   const menuItems = [
     { path: "/", label: "Dashboard", icon: "🏠" },
     { path: "/products", label: "Products", icon: "🛒" },
@@ -10,7 +9,6 @@ function Sidebar({ isOpen, closeSidebar }) {
 
   return (
     <>
-      {/* Dark overlay shown only on mobile when sidebar is open */}
       {isOpen && <div className="sidebar-overlay" onClick={closeSidebar}></div>}
 
       <aside className={`sidebar ${isOpen ? "sidebar-open" : ""}`}>

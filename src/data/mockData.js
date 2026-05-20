@@ -1,19 +1,18 @@
-// Dummy data used across the app. In a real project this would come from an API.
 
 export const mockStats = [
-  { id: 1, title: "Total Orders", value: "2", icon: "📦", color: "#4CAF50" },
-  { id: 2, title: "Revenue", value: "₹1000", icon: "💰", color: "#FF9800" },
-  { id: 3, title: "Active Users", value: "10", icon: "👥", color: "#2196F3" },
-  { id: 4, title: "Pending Deliveries", value: "1", icon: "🚚", color: "#F44336" },
+  { id: 1, title: "Total Orders", value: "120", icon: "📦", color: "#4CAF50" },
+  { id: 2, title: "Revenue", value: "₹10000", icon: "💰", color: "#FF9800" },
+  { id: 3, title: "Active Users", value: "50", icon: "👥", color: "#2196F3" },
+  { id: 4, title: "Pending Deliveries", value: "4", icon: "🚚", color: "#F44336" },
 ];
 
 export const mockOrders = [
   { id: "ORD-1001", customer: "Rahul Sharma", item: "Organic Tomatoes", amount: "₹450", status: "Delivered", date: "2025-05-18" },
   { id: "ORD-1002", customer: "Priya Patel", item: "Fresh Spinach Bundle", amount: "₹220", status: "Pending", date: "2025-05-18" },
-  // { id: "ORD-1003", customer: "Amit Kumar", item: "Mango Box (5kg)", amount: "₹1,200", status: "Shipped", date: "2025-05-17" },
-  // { id: "ORD-1004", customer: "Sneha Reddy", item: "Mixed Vegetables", amount: "₹680", status: "Delivered", date: "2025-05-17" },
-  // { id: "ORD-1005", customer: "Vikram Singh", item: "Farm Eggs (30pcs)", amount: "₹360", status: "Pending", date: "2025-05-16" },
-  // { id: "ORD-1006", customer: "Anita Joshi", item: "Cold-Pressed Oil", amount: "₹890", status: "Shipped", date: "2025-05-16" },
+  { id: "ORD-1003", customer: "Amit Kumar", item: "Mango Box (5kg)", amount: "₹1,200", status: "Shipped", date: "2025-05-17" },
+  { id: "ORD-1004", customer: "Sneha Reddy", item: "Mixed Vegetables", amount: "₹680", status: "Delivered", date: "2025-05-17" },
+  { id: "ORD-1005", customer: "Vikram Singh", item: "Farm Eggs (30pcs)", amount: "₹360", status: "Pending", date: "2025-05-16" },
+  { id: "ORD-1006", customer: "Anita Joshi", item: "Cold-Pressed Oil", amount: "₹890", status: "Shipped", date: "2025-05-16" },
 ];
 
 export const mockProducts = [

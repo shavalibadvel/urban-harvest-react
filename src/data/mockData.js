@@ -1,4 +1,4 @@
-// this is temporary data for stats and orders
+// this is temporary data for stats and orders and has some modifications to fit the Indian context and the theme of the app. In a real application, this data would come from an API or database.
 export const mockStats = [
   { id: 1, title: "Total Orders", value: "120", icon: "📦", color: "#4CAF50" },
   { id: 2, title: "Revenue", value: "₹10000", icon: "💰", color: "#FF9800" },
